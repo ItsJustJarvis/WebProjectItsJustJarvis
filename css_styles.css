@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+h1{
+    text-align: center;
+}
+
+article{
+    font-family: serif;
+    font-size: 12pt;
+}
+
+p::first-line{
+    text-indent: 2em;
+}
+
+h3.new{
+    background-color: #226633;
+}
+
+article>p:last-of-type{
+    font-style: italic;
+}
+
+
+ul>li{
+    list-style-image: url(redball.png);
+}
+
+nav>ul>li a:visited{
+    color: green;
+}
+
+aside{
+    width: 33%;
+    float: right;
+}
+
+footer{
+    clear: both;
+    width: 90%;
+    min-width: 786px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+nav
+
+body>footer>img{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
