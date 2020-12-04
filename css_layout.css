@@ -5,119 +5,112 @@ html {
 }
 
 body {
-  color: white;
-  position: relative;
-  background-color: rgba(25, 60, 95, 0.6);
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  margin:auto;
   max-width: 1100px;
   min-width: 720px;
-  width: 95%;
-  min-height: 95%;
-}
-
-body > img#bodybackground {
-  display: block;
-  box-sizing: content-box;
   width: 100%;
-  margin: auto;
-  filter: opacity(0.5);
+  min-height: 100%;
+  color: white;
+  background-color: rgba(25, 60, 95, 0.6);
 }
 
-body > header {
-  position: relative;
-  height: 220px;
-  margin-bottom: 30px;
-}
-
-body > header > a img {
-  display: block;
-  box-sizing: content-box;
-  width: 100%;
-  height: 190px;
-}
-
-body > header > nav.tabs {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 0px;
+header{
+  height: 12rem;
   width: 100%;
 }
 
-body > header > nav.tabs > ul {
-  position: absolute;
-  bottom: 0px;
+img#logo {
+  display: flex;
+  height: 100%;
   width: 100%;
 }
 
-body > header nav.tabs li {
+nav#tabs ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+nav#tabs li {
+  flex: 1 1 auto;
   background-color: rgba(8, 59, 27, 0.6);
-  display: block;
-  float: left;
-  height: 30px;
   letter-spacing: 3px;
   line-height: 30px;
-  margin: auto;
-  width: 25%;
   text-align: center;
 }
 
-body > header nav.tabs li a {
+nav#tabs li a {
   color: white;
 }
 
-body > header nav.tabs li:hover {
-  background-color: rgba(25, 60, 95, 0.6);
+nav#tabs li:hover {
+  background-color: rgba(25, 95, 52, 0.6);
 }
 
 h1 {
   font-size: large;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin: 2em;
 }
 
 p {
-  margin: 1.5em;
+  margin: 2em;
 }
 
-section#left img {
-  display: block;
-  margin: auto;
+img#me {
+  display: flex;
+  flex: 1 1 100px;
+  margin: 2em auto;
   width: 70%;
+  height: 
+}
+
+div#partners{
+  display: flex;
+  margin: 10em auto;
+}
+
+div#partners img {
+  flex: 1 1 20em;
+  flex-flow: column nowrap;
+  margin: 2em auto;
+  width: 20%;
 }
 
 section#left {
-  margin-top: 25px;
-  float: left;
+  flex: 1 1 auto;
+  margin-top: 2rem;
   padding-bottom: 20px;
   width: 40%;
 }
 
 section#right {
+  flex: 1 1 auto;
   margin-top: 25px;
-  float: left;
   padding-bottom: 20px;
   width: 60%;
 }
 
-article.aboutme {
-  display: block;
-  box-sizing: content-box;
+
+div#aboutme {
   margin: 10px 50px;
 }
 
-article.welcome {
-  display: block;
-  box-sizing: content-box;
-  margin: 50px 100px;
+article#welcome {
+  margin: 50px 150px;
 }
 
-body>.fa {
-  box-sizing: content-box;
+div#socials{
+  margin: auto;
+}
+
+.fa {
+  display: flex;
+  flex: row nowrap;
   padding: 20px;
   font-size: 30px;
-  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -144,10 +137,8 @@ body>.fa {
 }
 
 footer {
-  clear: left;
-  position: relative;
+  order: 99;
   width: 100%;
-  height: 5%;
   background-color: rgba(8, 59, 27, 0.6);
   text-align: center;
 }
