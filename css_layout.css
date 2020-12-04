@@ -1,4 +1,7 @@
+/* General Styles */
+
 html {
+  background: url(colourbackground.png) center center/cover no-repeat fixed;
   box-sizing: border-box;
   background-color: black;
   min-height: 100%;
@@ -7,7 +10,7 @@ html {
 body {
   display: flex;
   flex-flow: row wrap;
-  margin:auto;
+  margin: auto;
   max-width: 1100px;
   min-width: 720px;
   width: 100%;
@@ -16,7 +19,9 @@ body {
   background-color: rgba(25, 60, 95, 0.6);
 }
 
-header{
+/* Header Styles */
+
+header {
   height: 12rem;
   width: 100%;
 }
@@ -48,61 +53,89 @@ nav#tabs li:hover {
   background-color: rgba(25, 95, 52, 0.6);
 }
 
-h1 {
-  font-size: large;
+/* Main Content Styles */
+
+h1, h2 {
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
-  margin: 2em;
+  padding-bottom: 1em;
 }
 
-p {
-  margin: 2em;
+section#self p {
+  padding: 1em;
+  margin: 0 5em;
+}
+
+section#self {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 5em auto;
+  width: 100%;
+  height: auto;
 }
 
 img#me {
-  display: flex;
-  flex: 1 1 100px;
-  margin: 2em auto;
-  width: 70%;
-  height: 
+  flex: 1 2 auto;
+  width: 30%;
+  height: auto;
+  margin-left: 5em;
+  border-radius: 10%;
 }
 
-div#partners{
-  display: flex;
-  margin: 10em auto;
-}
-
-div#partners img {
-  flex: 1 1 20em;
-  flex-flow: column nowrap;
-  margin: 2em auto;
-  width: 20%;
-}
-
-section#left {
+article#self {
   flex: 1 1 auto;
-  margin-top: 2rem;
-  padding-bottom: 20px;
-  width: 40%;
-}
-
-section#right {
-  flex: 1 1 auto;
-  margin-top: 25px;
-  padding-bottom: 20px;
+  margin: 5em auto;
   width: 60%;
 }
 
+section#partners {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: auto;
+}
 
-div#aboutme {
-  margin: 10px 50px;
+section#partners h1{
+  line-height: normal;
+  padding: 1em;
+  margin: 0 auto;
+  width: 40%;
+}
+
+div.kaylaArchie p{
+  margin: 1em auto;
+}
+
+div.kaylaArchie{
+  flex-flow: column nowrap;
+  margin: 0 ;
+  width: 30%;
+  padding: 1em;
+}
+
+figure > img.partners {
+  flex: 1 2 auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10%;
 }
 
 article#welcome {
   margin: 50px 150px;
 }
 
-div#socials{
+figcaption{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+/* Social Link Styles */
+
+div#socials {
   margin: auto;
 }
 
@@ -137,8 +170,10 @@ div#socials{
 }
 
 footer {
+  margin-top: 10em;
   order: 99;
   width: 100%;
+  height: auto;
   background-color: rgba(8, 59, 27, 0.6);
   text-align: center;
 }
