@@ -55,7 +55,8 @@ nav#tabs li:hover {
 
 /* Main Content Styles */
 
-h1, h2 {
+h1,
+h2 {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
@@ -63,27 +64,30 @@ h1, h2 {
 }
 
 section#self p {
+  font-size: 1.2em;
   padding: 1em;
-  margin: 0 5em;
+  margin: 0 2em;
+  vertical-align: middle;
 }
 
 section#self {
   display: flex;
   flex-flow: row nowrap;
   margin: 5em auto;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 img#me {
   flex: 1 2 auto;
-  width: 30%;
+  margin: 0 auto;
+  width: 35%;
   height: auto;
-  margin-left: 5em;
   border-radius: 10%;
 }
 
 article#self {
+  vertical-align: middle;
   flex: 1 1 auto;
   margin: 5em auto;
   width: 60%;
@@ -92,24 +96,25 @@ article#self {
 section#partners {
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: auto;
 }
 
-section#partners h1{
+section#partners h1 {
+  text-align: left;
   line-height: normal;
-  padding: 1em;
   margin: 0 auto;
   width: 40%;
 }
 
-div.kaylaArchie p{
+div.kaylaArchie p {
   margin: 1em auto;
 }
 
-div.kaylaArchie{
+div.kaylaArchie {
   flex-flow: column nowrap;
-  margin: 0 ;
+  margin: 0;
   width: 30%;
   padding: 1em;
 }
@@ -126,10 +131,19 @@ article#welcome {
   margin: 50px 150px;
 }
 
-figcaption{
+figcaption {
   text-align: center;
   font-size: large;
   font-weight: bold;
+}
+
+section#adventures {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section#adventures h1 {
+  text-align: left;
 }
 
 /* Gallery styles*/
@@ -140,9 +154,8 @@ figcaption{
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
+  flex: 1 1 auto;
   max-width: 25%;
   padding: 0 4px;
 }
@@ -152,25 +165,6 @@ figcaption{
   vertical-align: middle;
   width: 100%;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
-
 
 /* Social Link Styles */
 
@@ -215,4 +209,20 @@ footer {
   height: auto;
   background-color: rgba(8, 59, 27, 0.6);
   text-align: center;
+}
+
+/*Responsive Features*/
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
