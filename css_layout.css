@@ -1,7 +1,7 @@
 /* General Styles */
 
 html {
-  background: url(colourbackground.png) center center/cover no-repeat fixed;
+  background: url(photos/colourbackground.png) center center/cover no-repeat fixed;
   box-sizing: border-box;
   background-color: black;
   min-height: 100%;
@@ -19,12 +19,58 @@ body {
   background-color: rgba(25, 60, 95, 0.6);
 }
 
-/* Header Styles */
-
 header {
   height: 12rem;
   width: 100%;
 }
+
+
+footer {
+  margin-top: 10em;
+  order: 99;
+  width: 100%;
+  height: auto;
+  background-color: rgba(8, 59, 27, 0.6);
+  text-align: center;
+}
+
+/* Social Link Styles */
+
+div#socials {
+  margin: auto;
+}
+
+.fa {
+  display: flex;
+  flex: row nowrap;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-steam {
+  background-color: white;
+  background-image: url(photos/steam.png) cover no-repeat;
+}
+
+/* Header Styles */
 
 img#logo {
   display: flex;
@@ -57,6 +103,7 @@ nav#tabs li:hover {
 
 h1,
 h2 {
+  margin-top: 2em;
   font-size: 2em;
   font-weight: bold;
   text-align: center;
@@ -166,50 +213,10 @@ section#adventures h1 {
   width: 100%;
 }
 
-/* Social Link Styles */
+/* Portfolio Page */
 
-div#socials {
-  margin: auto;
-}
 
-.fa {
-  display: flex;
-  flex: row nowrap;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-.fa-steam {
-  background-color: white;
-  background-image: url(steam.png) cover no-repeat;
-}
-
-footer {
-  margin-top: 10em;
-  order: 99;
-  width: 100%;
-  height: auto;
-  background-color: rgba(8, 59, 27, 0.6);
-  text-align: center;
-}
 
 /*Responsive Features*/
 
