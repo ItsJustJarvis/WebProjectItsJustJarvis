@@ -57,12 +57,13 @@ footer ul li {
 }
 
 footer li:hover {
-  background-color: rgb(25, 95, 52);
+  background-color: rgba(25, 95, 52, 0.6);
 }
 
 /* Social Link Styles */
 .fa {
   flex: 1 1 auto;
+  width: 2em;
   height: auto;
   padding: 0.5em;
   font-size: 0.5em;
@@ -133,7 +134,7 @@ h2 {
   text-align: center;
   padding-bottom: 1em;
 }
-
+/* About Me Styles */
 section#self {
   display: flex;
   flex-flow: row nowrap;
@@ -227,6 +228,7 @@ section#adventures h1 {
 .column {
   flex: 1 1 auto;
   max-width: 25%;
+  height: 100%;
   padding: 0 4px;
 }
 
@@ -270,8 +272,27 @@ div.examples{
   padding: 2em;
 }
 
+/* Game Room */
 
+section#topthree {
+  width: 100%;
+  margin: 5em auto;
+}
 
+section#topthree h1{
+  text-align: center;
+}
+
+/* Contact Page */
+
+section#schedule {
+  width: 100%;
+  margin: 5em auto;
+}
+
+section#schedule h1{
+text-align: center;
+}
 
 /*Responsive Features*/
 
