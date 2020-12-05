@@ -22,6 +22,7 @@ body {
 header {
   height: 12em;
   width: 100%;
+  margin: 0 auto 1em;
 }
 
 footer {
@@ -33,6 +34,27 @@ footer {
   height: auto;
   background-color: rgba(8, 59, 27, 0.6);
 }
+
+hr{
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+p{
+  font-weight: normal;
+}
+
+
+/* Footer Section Styles */
 
 footer div {
   flex: 1 1 auto;
@@ -126,20 +148,13 @@ nav#tabs li:hover {
 
 /* Main Content Styles */
 
-h1,
-h2 {
-  margin-top: 2em;
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 1em;
-}
+
 /* About Me Styles */
 
 section#self {
   display: flex;
   flex-flow: row nowrap;
-  margin: 5em auto;
+  margin: 2em auto;
   width: 90%;
   height: auto;
   background-color:rgba(25, 60, 95, 0.7);
@@ -151,6 +166,7 @@ section#self p {
   padding: 1em;
   margin: 0% 2em;
   vertical-align: middle;
+  box-sizing: content-box;
 }
 
 img#me {
@@ -244,19 +260,25 @@ section#adventures h1 {
 
 /* Portfolio Page */
 
+div#intro{
+  margin: 1em auto;
+  width: 80%;
+}
+
 section.portfolio{
   text-align: left;
   display: flex;
   flex-flow: row nowrap;
-  margin: 3em auto;
+  margin: 1em auto;
   width: 90%;
 }
 
 section.portfolio h1{
   text-align: left;
 }
+
 section.portfolio div{
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   flex: 1 1 auto;
   margin: 0em auto;
 }
@@ -298,13 +320,81 @@ section#topthree h1{
 /* Contact Page */
 
 section#schedule {
-  width: 100%;
+  display: flex;
+  width: 90%;
   margin: 5em auto;
 }
 
 section#schedule h1{
+font-size: 2em;
+margin: 1em auto;
 text-align: center;
 }
+
+section#schedule p{
+  margin: 1em auto;
+}
+
+section#schedule article{
+  width: 80%;
+  text-align: left;
+  margin: auto;
+}
+
+div#table{
+ flex: 1 1 auto;
+ width: 60%;
+}
+
+div#contact{
+  flex: 1 1 auto;
+  width: 40%;
+}
+
+div#contact article a {
+  text-decoration: none;
+  color: rgb(25, 60, 95);
+}
+
+div#contact article a:hover{
+  color: rgba(25, 95, 52, 0.6);
+}
+
+div#contact figure{
+  flex: 1 1 auto;
+  width: 40%;
+  margin: auto;
+}
+
+img#headshot {
+  width: 100%;
+  border-radius: 50%/50%;
+}
+
+table#calendar {
+  width: 90%;
+  margin: auto;
+  background: rgba(25, 60, 95, 0.6);
+  border: 5px solid rgb(25, 60, 95);
+}
+
+table#calendar th,td{
+  border: 3px solid rgb(25, 60, 95);
+  line-height: 3em;
+}
+
+table#calendar td {
+  padding: 0 1em 1em 0.5em;
+}
+
+table#calendar td:hover{
+  background-color: rgba(25, 95, 52, 0.6);
+}
+
+table#calendar tr a:visited{
+  background-color: red;
+}
+
 
 /*Responsive Features*/
 
