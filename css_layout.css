@@ -375,6 +375,7 @@ div#buttons {
 }
 
 @media screen and (max-width: 480px) {
+    
   /* General */
 
   nav#tabs li {

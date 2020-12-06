@@ -1,7 +1,7 @@
 /* General Styles */
 
 html {
-  background: url(photos/colourbackground.png) center center/cover no-repeat
+  background: url(photos/colourbackground.svg) center center/cover no-repeat
       fixed,
     black;
 }
