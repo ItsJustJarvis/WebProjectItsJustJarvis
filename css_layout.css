@@ -1,7 +1,8 @@
 /* General Styles */
 
 html {
-  background: url(photos/colourbackground.png) center center/cover no-repeat fixed;
+  background: url(photos/colourbackground.png) center center/cover no-repeat
+    fixed;
   box-sizing: border-box;
   background-color: black;
   min-height: 100%;
@@ -11,7 +12,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   min-height: 100%;
-  margin: 0px auto;
+  margin: auto;
   min-width: 320px;
   max-width: 1024px;
   width: 100%;
@@ -30,12 +31,13 @@ footer {
   flex-flow: row nowrap;
   align-items: center;
   margin-top: 5em;
+  padding: 1em 1em;
   width: 100%;
   height: auto;
   background-color: rgba(8, 59, 27, 0.6);
 }
 
-hr{
+hr {
   width: 100%;
 }
 
@@ -49,10 +51,9 @@ h2 {
   width: 100%;
 }
 
-p{
+p {
   font-weight: normal;
 }
-
 
 /* Footer Section Styles */
 
@@ -61,13 +62,17 @@ footer div {
   width: 33%;
 }
 
+div#tag{
+  font-size: small;
+}
+
 div#links ul {
   color: white;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
-div#links ul li a{
+div#links ul li a {
   color: white;
   text-decoration: none;
 }
@@ -89,7 +94,7 @@ footer li:hover {
   height: auto;
   padding: 0.5em;
   font-size: 0.5em;
-  margin: 1em auto;
+  margin: auto;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -105,7 +110,7 @@ footer li:hover {
 }
 
 .fa-facebook {
-  margin-left: 5em;
+  margin: auto;
   background: #3b5998;
   color: white;
 }
@@ -148,17 +153,18 @@ nav#tabs li:hover {
 
 /* Main Content Styles */
 
-
 /* About Me Styles */
 
 section#self {
   display: flex;
   flex-flow: row nowrap;
   margin: 2em auto;
+  padding: 1em 2em;
   width: 90%;
   height: auto;
-  background-color:rgba(25, 60, 95, 0.7);
+  background-color: rgba(25, 60, 95, 0.7);
   border-radius: 10%/17%;
+
 }
 
 section#self p {
@@ -260,12 +266,12 @@ section#adventures h1 {
 
 /* Portfolio Page */
 
-div#intro{
+div#intro {
   margin: 1em auto;
   width: 80%;
 }
 
-section.portfolio{
+section.portfolio {
   text-align: left;
   display: flex;
   flex-flow: row nowrap;
@@ -273,26 +279,25 @@ section.portfolio{
   width: 90%;
 }
 
-section.portfolio h1{
+section.portfolio h1 {
   text-align: left;
 }
 
-section.portfolio div{
+section.portfolio div {
   flex-flow: column wrap;
   flex: 1 1 auto;
   margin: 0em auto;
 }
 
-div.text{
+div.text {
   flex: 1 1 auto;
   width: 40%;
   height: auto;
   margin: auto;
   padding: 2em;
-
 }
 
-div.examples{
+div.examples {
   flex: 1 1 auto;
   width: 20%;
   height: auto;
@@ -300,7 +305,7 @@ div.examples{
   padding: 2em;
 }
 
-div.examples img{
+div.examples img {
   flex: 1 1 auto;
   width: 100%;
   margin: 0em auto;
@@ -313,7 +318,7 @@ section#topthree {
   margin: 5em auto;
 }
 
-section#topthree h1{
+section#topthree h1 {
   text-align: center;
 }
 
@@ -325,46 +330,58 @@ section#schedule {
   margin: 5em auto;
 }
 
-section#schedule h1{
-font-size: 2em;
-margin: 1em auto;
-text-align: center;
+section#schedule h1 {
+  font-size: 2em;
+  margin: 1em auto;
+  text-align: center;
 }
 
-section#schedule p{
+section#schedule p {
   margin: 1em auto;
 }
 
-section#schedule article{
+section#schedule article {
   width: 80%;
-  text-align: left;
+  text-align: center;
   margin: auto;
 }
 
-div#table{
- flex: 1 1 auto;
- width: 60%;
+div#table {
+  flex: 1 1 auto;
+  width: 60%;
 }
 
-div#contact{
+div#contact {
   flex: 1 1 auto;
   width: 40%;
+  height: auto;
 }
 
 div#contact article a {
   text-decoration: none;
-  color: rgb(25, 60, 95);
+  color: white;
 }
 
-div#contact article a:hover{
+div#contact article a:hover {
   color: rgba(25, 95, 52, 0.6);
 }
 
-div#contact figure{
+div#contact figure {
   flex: 1 1 auto;
   width: 40%;
   margin: auto;
 }
+
+div#methods{
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1em;
+  width: 100%;
+  background-color: rgba(25, 60, 95, 0.6);
+  border: solid rgb(15, 38, 61);
+  border-radius: 10%/17%;  
+}
+
 
 img#headshot {
   width: 100%;
@@ -374,12 +391,13 @@ img#headshot {
 table#calendar {
   width: 90%;
   margin: auto;
-  background: rgba(25, 60, 95, 0.6);
-  border: 5px solid rgb(25, 60, 95);
+  background: rgba(25, 60, 95, 0.4);
+  border: solid rgb(15, 38, 61);
 }
 
-table#calendar th,td{
-  border: 3px solid rgb(25, 60, 95);
+table#calendar th,
+td {
+  border: solid rgb(15, 38, 61);
   line-height: 3em;
 }
 
@@ -387,12 +405,86 @@ table#calendar td {
   padding: 0 1em 1em 0.5em;
 }
 
-table#calendar td:hover{
+table#calendar td:hover {
   background-color: rgba(25, 95, 52, 0.6);
 }
 
-table#calendar tr a:visited{
-  background-color: red;
+/* Form Styles */
+
+section#form {
+  width: 90%;
+  height: auto;
+  margin: 1em auto;
+}
+
+section#form p {
+  margin-bottom: 0.5em;
+}
+
+
+fieldset#details {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  font-size: 0.85em;
+  margin: auto;
+  border: solid  rgb(15, 38, 61);
+  background-color: rgba(25, 60, 95, 0.7);
+}
+
+div#fColumn1 {
+  flex: 1 1 auto;
+  width: 25%;
+  margin: auto;
+}
+
+div#fColumn2 {
+  flex: 1 1 auto;
+  width: 25%;
+  margin: auto;
+  text-align: center;
+}
+
+div#fColumn2 > div.fRow {
+  flex-flow: row wrap;
+}
+
+div#fColumn3 {
+  flex: 1 1 auto;
+  width: 50%;
+  margin: auto;
+}
+
+div.fRow {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: 0.5em auto;
+}
+
+textarea{
+  flex: 1 1 auto;
+  width: 100%;
+  height: 10em;
+}
+
+div#buttons{
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  width: 40%;
+  margin: auto;
+}
+
+input, textarea, select{
+  background-color: rgba(185, 188, 190, 0.7);
+}
+
+input.press{
+  background-color: white;
+}
+
+input:hover, textarea:hover, select:hover, input.press:hover{
+  background-color:rgba(25, 95, 52, 0.6);
 }
 
 
