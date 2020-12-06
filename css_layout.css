@@ -83,11 +83,10 @@ footer ul li {
   flex: 1 1 auto;
 }
 
-.fa {
+img.socials {
   flex: 1 1 auto;
   width: 2em;
   margin: auto;
-  padding: 0.5em;
 }
 
 /* Landing Page */
@@ -139,13 +138,13 @@ div.kaylaArchie {
   margin: 0em auto;
 }
 
-div.kaylaArchie figure{
+div.kaylaArchie figure {
   flex: 1 1 auto;
   width: 60%;
   margin: auto;
 }
 
-div.kaylaArchie p{
+div.kaylaArchie p {
   flex: 1 1 auto;
   width: 75%;
   margin: auto;
@@ -193,53 +192,66 @@ section#adventures h1 {
 section#intro {
   display: flex;
   flex-flow: row wrap;
-  margin: auto;
+  margin: 2em auto;
+  padding: 1.5em;
   width: 90%;
 }
 
-div#blurb{
-  width: 60%;
+div#blurb {
+  width: 75%;
   margin: auto;
+  padding: 2em;
 }
 
-div#blurb h1{
+div#blurb p {
+  padding: 0 3em 0 3em;
+}
+
+div#blurb h1 {
   padding-bottom: 1em;
 }
 
-div#skills{
+div#skills {
+  display: flex;
+  flex-flow: row wrap;
+  width: 25%;
   margin: auto;
+  padding: 1em;
+}
+
+div#skills h3 {
+  margin-bottom: 1em;
+}
+
+div#skills div {
+  flex: 1 1 auto;
+  margin: auto;
+  width: 50%;
 }
 
 section.portfolio {
-  text-align: left;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin: 1em auto;
   width: 90%;
-}
-
-section.portfolio h1 {
-  text-align: left;
 }
 
 section.portfolio div {
   flex-flow: column wrap;
   flex: 1 1 auto;
-  margin: 0em auto;
+  margin: auto;
 }
 
 div.text {
   flex: 1 1 auto;
   width: 40%;
-  height: auto;
   margin: auto;
   padding: 2em;
 }
 
 div.examples {
   flex: 1 1 auto;
-  width: 20%;
-  height: auto;
+  width: 30%;
   margin: auto;
   padding: 2em;
 }
@@ -265,44 +277,15 @@ section#topthree h1 {
 
 section#schedule {
   display: flex;
+  flex-flow: row wrap;
   width: 90%;
   margin: 5em auto;
-}
-
-section#schedule h1 {
-  font-size: 2em;
-  margin: 1em auto;
-  text-align: center;
-}
-
-section#schedule p {
-  margin: 1em auto;
-}
-
-section#schedule article {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
-
-div#table {
-  flex: 1 1 auto;
-  width: 60%;
 }
 
 div#contact {
   flex: 1 1 auto;
   width: 40%;
-  height: auto;
-}
-
-div#contact article a {
-  text-decoration: none;
-  color: white;
-}
-
-div#contact article a:hover {
-  color: rgba(25, 95, 52, 0.6);
+  margin: auto;
 }
 
 div#contact figure {
@@ -311,62 +294,39 @@ div#contact figure {
   margin: auto;
 }
 
-div#methods {
+div.methods {
   display: flex;
-  flex-flow: column nowrap;
-  padding: 1em;
-  width: 100%;
-  background-color: rgba(25, 60, 95, 0.6);
-  border: solid rgb(15, 38, 61);
-  border-radius: 10%/17%;
+  flex-flow: row wrap;
+  margin: 1em auto;
+  width: 90%;
 }
 
 img#headshot {
   width: 100%;
-  border-radius: 50%/50%;
 }
 
 table#calendar {
-  width: 90%;
-  margin: auto;
-  background: rgba(25, 60, 95, 0.4);
-  border: solid rgb(15, 38, 61);
-}
-
-table#calendar th,
-td {
-  border: solid rgb(15, 38, 61);
-  line-height: 3em;
+  flex: 1 1 auto;
+  width: 60%;
+  margin: 1em auto;
 }
 
 table#calendar td {
   padding: 0 1em 1em 0.5em;
 }
 
-table#calendar td:hover {
-  background-color: rgba(25, 95, 52, 0.6);
-}
+/* Form Layout */
 
-/* Form Styles */
-
-section#form {
+form#request {
   width: 90%;
-  height: auto;
-  margin: 1em auto;
-}
-
-section#form p {
-  margin-bottom: 0.5em;
+  margin: 0 auto;
 }
 
 fieldset#details {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  font-size: 0.85em;
   margin: auto;
-  border: solid rgb(15, 38, 61);
-  background-color: rgba(25, 60, 95, 0.7);
 }
 
 div#fColumn1 {
@@ -379,11 +339,6 @@ div#fColumn2 {
   flex: 1 1 auto;
   width: 25%;
   margin: auto;
-  text-align: center;
-}
-
-div#fColumn2 > div.fRow {
-  flex-flow: row wrap;
 }
 
 div#fColumn3 {
@@ -393,8 +348,7 @@ div#fColumn3 {
 }
 
 div.fRow {
-  display: flex;
-  flex-flow: column wrap;
+  flex: 1 1 auto;
   width: 90%;
   margin: 0.5em auto;
 }
@@ -406,27 +360,9 @@ textarea {
 }
 
 div#buttons {
-  flex-flow: row wrap;
   flex: 1 1 auto;
   width: 40%;
   margin: auto;
-}
-
-input,
-textarea,
-select {
-  background-color: rgba(185, 188, 190, 0.7);
-}
-
-input.press {
-  background-color: white;
-}
-
-input:hover,
-textarea:hover,
-select:hover,
-input.press:hover {
-  background-color: rgba(25, 95, 52, 0.6);
 }
 
 /*Responsive Features*/
@@ -439,22 +375,72 @@ input.press:hover {
 }
 
 @media screen and (max-width: 480px) {
-  
+  /* General */
+
+  nav#tabs li {
+    width: 50%;
+  }
+
+  /* About Me Page */
+
+  img#me {
+    width: 100%;
+  }
+
+  div.kaylaArchie {
+    width: 100%;
+  }
+
   .column {
     flex: 2 1 auto;
     max-width: 100%;
   }
 
-  nav#tabs li{
-    width: 50%;
-  }
+  /* Portfolio Page */
 
-  img#me{
+  div#blurb {
     width: 100%;
   }
 
-  div.kaylaArchie{
+  div#blurb p {
+    padding: 0;
     width: 100%;
   }
 
+  div#skills {
+    width: 100%;
+  }
+
+  section.portfolio div {
+    width: 100%;
+  }
+
+  /* Contact page */
+
+  div#contact {
+    order: 1;
+  }
+
+  table#calendar {
+    order: 2;
+    width: 100%;
+  }
+
+  fieldset#details {
+    flex-flow: column nowrap;
+  }
+
+  div#fColumn1,
+  div#fColumn2,
+  div#fColumn3 {
+    width: 100%;
+  }
+
+  div.fRow {
+    width: 100%;
+  }
+
+  div#buttons {
+    width: 100%;
+  }
 }
