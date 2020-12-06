@@ -1,0 +1,120 @@
+/* General Styles */
+
+html {
+  background: url(photos/colourbackground.png) center center/cover no-repeat
+      fixed,
+    black;
+}
+
+body {
+  color: white;
+  background-color: rgba(25, 60, 95, 0.6);
+}
+
+footer {
+  background-color: rgba(8, 59, 27, 0.6);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  text-align: center;
+  line-height: normal;
+}
+
+p {
+  font-weight: normal;
+}
+
+ul,
+li {
+  text-align: center;
+}
+
+img {
+  border-radius: 1em;
+}
+
+/* Header Styles */
+
+img#logo {
+  border-radius: 0%;
+}
+
+nav#tabs li {
+  background-color: rgba(8, 59, 27, 0.6);
+  letter-spacing: 3px;
+  line-height: 30px;
+  text-align: center;
+}
+
+nav#tabs li a {
+  color: white;
+}
+
+nav#tabs li:hover {
+  background-color: rgba(25, 95, 52, 0.6);
+}
+
+/* Footer Styles*/
+
+footer li:hover {
+  background-color: rgba(25, 95, 52, 0.6);
+}
+
+div#tag {
+  font-size: small;
+}
+
+div#links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-steam {
+  background-color: white;
+  background: url(photos/steam.png), white;
+}
+
+/* About Me Page Styles */
+
+section#self {
+  background-color: rgba(25, 60, 95, 0.6);
+  border-radius: 1em/1.5em;
+}
+
+section#partners h1 {
+  text-align: left;
+}
+
+img.partners {
+  border-radius: 1em;
+}
+
+figcaption {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}

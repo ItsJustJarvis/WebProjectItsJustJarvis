@@ -1,10 +1,7 @@
-/* General Styles */
+/* General Layout */
 
 html {
-  background: url(photos/colourbackground.png) center center/cover no-repeat
-    fixed;
   box-sizing: border-box;
-  background-color: black;
   min-height: 100%;
 }
 
@@ -12,18 +9,16 @@ body {
   display: flex;
   flex-flow: row wrap;
   min-height: 100%;
-  margin: auto;
   min-width: 320px;
   max-width: 1024px;
   width: 100%;
-  color: white;
-  background-color: rgba(25, 60, 95, 0.6);
+  margin: auto;
 }
 
 header {
-  height: 12em;
+  height: 10em;
   width: 100%;
-  margin: 0 auto 1em;
+  margin: 0em auto 5em;
 }
 
 footer {
@@ -34,7 +29,6 @@ footer {
   padding: 1em 1em;
   width: 100%;
   height: auto;
-  background-color: rgba(8, 59, 27, 0.6);
 }
 
 hr {
@@ -43,84 +37,17 @@ hr {
 
 h1,
 h2 {
-  margin-top: 2em;
+  margin: auto;
   font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 1em;
+  padding: 0.5em;
   width: 100%;
 }
 
 p {
-  font-weight: normal;
-}
-
-/* Footer Section Styles */
-
-footer div {
-  flex: 1 1 auto;
-  width: 33%;
-}
-
-div#tag{
-  font-size: small;
-}
-
-div#links ul {
-  color: white;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-div#links ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-footer ul li {
-  flex: 1 1 auto;
-  flex-flow: column wrap;
-  text-align: center;
-}
-
-footer li:hover {
-  background-color: rgba(25, 95, 52, 0.6);
-}
-
-/* Social Link Styles */
-.fa {
-  flex: 1 1 auto;
-  width: 2em;
-  height: auto;
   padding: 0.5em;
-  font-size: 0.5em;
-  margin: auto;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-facebook {
-  margin: auto;
-  background: #3b5998;
-  color: white;
-}
-
-.fa-steam {
-  background-color: white;
-  background: url(photos/steam.png), white;
-}
-
-/* Header Styles */
+/* Header Layout */
 
 img#logo {
   display: flex;
@@ -131,111 +58,108 @@ img#logo {
 
 nav#tabs ul {
   display: flex;
-  flex: 1 1 auto;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  margin: auto;
 }
 
 nav#tabs li {
   flex: 1 1 auto;
-  background-color: rgba(8, 59, 27, 0.6);
-  letter-spacing: 3px;
-  line-height: 30px;
-  text-align: center;
+  width: 25%;
 }
 
-nav#tabs li a {
-  color: white;
+/* Footer Layout */
+
+footer div {
+  flex: 1 1 auto;
+  width: 33%;
 }
 
-nav#tabs li:hover {
-  background-color: rgba(25, 95, 52, 0.6);
+div#links ul {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-/* Main Content Styles */
+footer ul li {
+  flex: 1 1 auto;
+}
 
-/* About Me Styles */
+.fa {
+  flex: 1 1 auto;
+  width: 2em;
+  margin: auto;
+  padding: 0.5em;
+}
+
+/* Landing Page */
+
+article#welcome {
+  margin: auto;
+  padding: 5em;
+}
+
+/* About Me Page Layout */
 
 section#self {
   display: flex;
-  flex-flow: row nowrap;
-  margin: 2em auto;
-  padding: 1em 2em;
+  flex-flow: row wrap;
   width: 90%;
-  height: auto;
-  background-color: rgba(25, 60, 95, 0.7);
-  border-radius: 10%/17%;
-
-}
-
-section#self p {
-  font-size: 1.2em;
-  padding: 1em;
-  margin: 0% 2em;
-  vertical-align: middle;
-  box-sizing: content-box;
+  margin: auto;
+  padding: 1em 2em;
 }
 
 img#me {
   flex: 1 1 auto;
   margin: auto;
-  width: 35%;
-  height: auto;
-  border-radius: 10%;
+  width: 30%;
 }
 
-article#self {
-  vertical-align: middle;
+article#aboutme {
   flex: 1 1 auto;
-  margin: 5em auto;
+  margin: auto;
+  padding: 1em;
   width: 60%;
 }
 
 section#partners {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: 90%;
-  margin: 0 auto;
-  height: auto;
+  margin: auto;
 }
 
 section#partners h1 {
-  text-align: left;
-  line-height: normal;
-  margin: 0 auto;
-  width: 40%;
-}
-
-div.kaylaArchie p {
-  margin: 1em auto;
+  width: 100%;
+  margin: auto;
 }
 
 div.kaylaArchie {
-  flex-flow: column nowrap;
-  width: 30%;
+  flex: 1 1 auto;
+  width: 50%;
   padding: 1em;
+  margin: 0em auto;
 }
 
-figure > img.partners {
+div.kaylaArchie figure{
+  flex: 1 1 auto;
+  width: 60%;
+  margin: auto;
+}
+
+div.kaylaArchie p{
+  flex: 1 1 auto;
+  width: 75%;
+  margin: auto;
+}
+
+img.partners {
   flex: 1 1 auto;
   width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 10%;
-}
-
-article#welcome {
-  margin: 50px 150px;
-}
-
-figcaption {
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
+  margin: auto;
 }
 
 section#adventures {
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 section#adventures h1 {
@@ -246,20 +170,20 @@ section#adventures h1 {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  flex-flow: row wrap;
+  padding: 0 3px;
 }
 
 .column {
   flex: 1 1 auto;
   max-width: 25%;
   height: 100%;
-  padding: 0 4px;
+  padding: 0 3px;
 }
 
 .column img {
   border-radius: 5%;
-  margin-top: 8px;
+  margin-top: 6px;
   vertical-align: middle;
   width: 100%;
 }
@@ -372,16 +296,15 @@ div#contact figure {
   margin: auto;
 }
 
-div#methods{
+div#methods {
   display: flex;
   flex-flow: column nowrap;
   padding: 1em;
   width: 100%;
   background-color: rgba(25, 60, 95, 0.6);
   border: solid rgb(15, 38, 61);
-  border-radius: 10%/17%;  
+  border-radius: 10%/17%;
 }
-
 
 img#headshot {
   width: 100%;
@@ -421,14 +344,13 @@ section#form p {
   margin-bottom: 0.5em;
 }
 
-
 fieldset#details {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   font-size: 0.85em;
   margin: auto;
-  border: solid  rgb(15, 38, 61);
+  border: solid rgb(15, 38, 61);
   background-color: rgba(25, 60, 95, 0.7);
 }
 
@@ -462,44 +384,62 @@ div.fRow {
   margin: 0.5em auto;
 }
 
-textarea{
+textarea {
   flex: 1 1 auto;
   width: 100%;
   height: 10em;
 }
 
-div#buttons{
+div#buttons {
   flex-flow: row wrap;
   flex: 1 1 auto;
   width: 40%;
   margin: auto;
 }
 
-input, textarea, select{
+input,
+textarea,
+select {
   background-color: rgba(185, 188, 190, 0.7);
 }
 
-input.press{
+input.press {
   background-color: white;
 }
 
-input:hover, textarea:hover, select:hover, input.press:hover{
-  background-color:rgba(25, 95, 52, 0.6);
+input:hover,
+textarea:hover,
+select:hover,
+input.press:hover {
+  background-color: rgba(25, 95, 52, 0.6);
 }
-
 
 /*Responsive Features*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 769px) {
   .column {
     flex: 1 2 auto;
     max-width: 50%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+  
   .column {
     flex: 2 1 auto;
     max-width: 100%;
   }
+
+  nav#tabs li{
+    width: 50%;
+  }
+
+  img#me{
+    width: 100%;
+  }
+
+  div.kaylaArchie{
+    width: 100%;
+  }
+
 }
