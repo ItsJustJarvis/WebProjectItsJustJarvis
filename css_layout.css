@@ -117,7 +117,7 @@ footer li:hover {
 
 .fa-steam {
   background-color: white;
-  background-image: url(photos/steam.png) cover no-repeat;
+  background: url(photos/steam.png), white;
 }
 
 /* Header Styles */
