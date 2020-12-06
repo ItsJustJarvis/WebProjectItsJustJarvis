@@ -190,9 +190,24 @@ section#adventures h1 {
 
 /* Portfolio Page */
 
-div#intro {
-  margin: 1em auto;
-  width: 80%;
+section#intro {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 90%;
+}
+
+div#blurb{
+  width: 60%;
+  margin: auto;
+}
+
+div#blurb h1{
+  padding-bottom: 1em;
+}
+
+div#skills{
+  margin: auto;
 }
 
 section.portfolio {
