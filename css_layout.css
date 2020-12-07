@@ -92,8 +92,9 @@ img.socials {
 /* Landing Page */
 
 article#welcome {
+  width: 80%;
   margin: auto;
-  padding: 5em;
+  padding: 1em;
 }
 
 /* About Me Page Layout */
@@ -375,6 +376,7 @@ div#buttons {
 }
 
 @media screen and (max-width: 480px) {
+    
   /* General */
 
   nav#tabs li {
