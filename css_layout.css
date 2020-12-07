@@ -216,6 +216,7 @@ section.portfolio {
   display: flex;
   flex-flow: row wrap;
   margin: 1em auto;
+  padding: 1em;
   width: 90%;
 }
 
@@ -233,8 +234,7 @@ div.text {
 
 div.examples {
   flex: 1 1 auto;
-  width: 30%;
-  padding: 2em;
+  width: 50%;
 }
 
 div.examples img {
