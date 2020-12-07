@@ -62,13 +62,13 @@ nav#tabs li a {
 }
 
 nav#tabs li:hover {
-  background-color: rgba(25, 95, 52, 0.6);
+  background-color:rgba(25, 177, 83, 0.6);
 }
 
 /* Footer Styles*/
 
 footer li:hover {
-  background-color: rgba(25, 95, 52, 0.6);
+  background-color: rgba(25, 177, 83, 0.6);
 }
 
 div#tag {
@@ -136,7 +136,7 @@ div.text a{
 }
 
 div.text a:hover{
-    color: rgba(25, 95, 52, 0.6);
+    color: rgba(25, 177, 83, 0.6);
 }
 
 section.portfolio {
@@ -168,7 +168,7 @@ div#contact a {
 }
 
 div#contact a:hover {
-  color: rgba(25, 95, 52, 0.6);
+  color: rgba(25, 177, 83, 0.6);
 }
 
 img#headshot {
@@ -187,7 +187,7 @@ td {
 }
 
 table#calendar td:not(.busy):hover {
-  background-color: rgba(25, 95, 52, 0.6);
+  background-color: rgba(25, 177, 83, 0.6);
 }
 
 td.busy {
@@ -214,5 +214,5 @@ input:hover,
 textarea:hover,
 select:hover,
 input.press:hover {
-  background-color: rgba(25, 95, 52, 0.6);
+  background-color: rgba(25, 177, 83, 0.6);
 }
