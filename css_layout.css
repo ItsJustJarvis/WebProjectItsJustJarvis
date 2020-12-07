@@ -1,34 +1,31 @@
 /* General Layout */
 
-html {
-  box-sizing: border-box;
-  min-height: 100%;
+html{
+  height: 100%;
 }
 
 body {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   min-height: 100%;
   min-width: 320px;
   max-width: 1024px;
   width: 100%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
-  height: 10em;
   width: 100%;
-  margin: 0em auto 5em;
 }
 
 footer {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-top: 5em;
   padding: 1em 1em;
   width: 100%;
-  height: auto;
+  margin-top: auto;
 }
 
 hr {
@@ -50,27 +47,31 @@ p {
 /* Header Layout */
 
 img#logo {
-  display: flex;
-  flex: 1 1 auto;
-  height: 100%;
-  width: 100%;
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 1em;
 }
 
-nav#tabs ul {
-  display: flex;
-  flex-flow: row wrap;
+nav#tabs{
+  width: 100%;
   margin: auto;
 }
 
-nav#tabs li {
-  flex: 1 1 auto;
-  width: 25%;
+nav#tabs ul {
+ display: flex;
+ flex-flow: row wrap;
+ width: 100%;
+}
+
+nav#tabs ul li {
+  flex: auto;
 }
 
 /* Footer Layout */
 
 footer div {
-  flex: 1 1 auto;
+  flex: auto;
   width: 33%;
 }
 
@@ -80,13 +81,12 @@ div#links ul {
 }
 
 footer ul li {
-  flex: 1 1 auto;
+  flex: auto;
 }
 
 img.socials {
-  flex: 1 1 auto;
+  flex: auto;
   width: 2em;
-  margin: auto;
 }
 
 /* Landing Page */
@@ -97,25 +97,27 @@ article#welcome {
   padding: 1em;
 }
 
+article#welcome p{
+  padding: 0 2em 0 2em;
+}
+
 /* About Me Page Layout */
 
 section#self {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
-  margin: auto;
+  margin: 1em auto;
   padding: 1em 2em;
 }
 
 img#me {
-  flex: 1 1 auto;
-  margin: auto;
+  flex: auto;
   width: 30%;
 }
 
 article#aboutme {
-  flex: 1 1 auto;
-  margin: auto;
+  flex: auto;
   padding: 1em;
   width: 60%;
 }
@@ -127,43 +129,31 @@ section#partners {
   margin: auto;
 }
 
-section#partners h1 {
-  width: 100%;
-  margin: auto;
-}
-
 div.kaylaArchie {
-  flex: 1 1 auto;
+  flex: auto;
   width: 50%;
-  padding: 1em;
-  margin: 0em auto;
 }
 
 div.kaylaArchie figure {
-  flex: 1 1 auto;
+  flex: auto;
   width: 60%;
   margin: auto;
 }
 
 div.kaylaArchie p {
-  flex: 1 1 auto;
+  flex: auto;
   width: 75%;
   margin: auto;
 }
 
 img.partners {
-  flex: 1 1 auto;
+  flex: auto;
   width: 100%;
-  margin: auto;
 }
 
 section#adventures {
   width: 90%;
-  margin: auto;
-}
-
-section#adventures h1 {
-  text-align: left;
+  margin: 1em auto;
 }
 
 /* Gallery styles*/
@@ -193,23 +183,14 @@ section#adventures h1 {
 section#intro {
   display: flex;
   flex-flow: row wrap;
-  margin: 2em auto;
-  padding: 1.5em;
+  margin: 1em auto;
+  padding: 2em;
   width: 90%;
 }
 
 div#blurb {
   width: 75%;
-  margin: auto;
-  padding: 2em;
-}
-
-div#blurb p {
-  padding: 0 3em 0 3em;
-}
-
-div#blurb h1 {
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 div#skills {
@@ -224,12 +205,6 @@ div#skills h3 {
   margin-bottom: 1em;
 }
 
-div#skills div {
-  flex: 1 1 auto;
-  margin: auto;
-  width: 50%;
-}
-
 section.portfolio {
   display: flex;
   flex-flow: row wrap;
@@ -240,27 +215,23 @@ section.portfolio {
 section.portfolio div {
   flex-flow: column wrap;
   flex: 1 1 auto;
-  margin: auto;
 }
 
 div.text {
   flex: 1 1 auto;
   width: 40%;
-  margin: auto;
   padding: 2em;
 }
 
 div.examples {
   flex: 1 1 auto;
   width: 30%;
-  margin: auto;
   padding: 2em;
 }
 
 div.examples img {
   flex: 1 1 auto;
   width: 100%;
-  margin: 0em auto;
 }
 
 /* Game Room */
@@ -270,23 +241,24 @@ section#topthree {
   margin: 5em auto;
 }
 
-section#topthree h1 {
-  text-align: center;
-}
-
 /* Contact Page */
 
 section#schedule {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
-  margin: 5em auto;
+  margin: 1em auto;
+}
+
+section#schedule h1{
+  padding: 1em;
 }
 
 div#contact {
   flex: 1 1 auto;
   width: 40%;
   margin: auto;
+  padding: 1em;
 }
 
 div#contact figure {
@@ -309,7 +281,6 @@ img#headshot {
 table#calendar {
   flex: 1 1 auto;
   width: 60%;
-  margin: 1em auto;
 }
 
 table#calendar td {
@@ -320,7 +291,7 @@ table#calendar td {
 
 form#request {
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 fieldset#details {
@@ -333,25 +304,22 @@ fieldset#details {
 div#fColumn1 {
   flex: 1 1 auto;
   width: 25%;
-  margin: auto;
 }
 
 div#fColumn2 {
   flex: 1 1 auto;
   width: 25%;
-  margin: auto;
 }
 
 div#fColumn3 {
   flex: 1 1 auto;
   width: 50%;
-  margin: auto;
 }
 
 div.fRow {
   flex: 1 1 auto;
   width: 90%;
-  margin: 0.5em auto;
+  padding: 0.5em;
 }
 
 textarea {
@@ -363,7 +331,7 @@ textarea {
 div#buttons {
   flex: 1 1 auto;
   width: 40%;
-  margin: auto;
+  margin-left: auto;
 }
 
 /*Responsive Features*/

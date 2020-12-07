@@ -1,4 +1,14 @@
-
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
 
 address,
 article,

@@ -12,6 +12,10 @@ body {
   background-color: rgba(25, 60, 95, 0.6);
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 footer {
   background-color: rgba(8, 59, 27, 0.6);
 }
@@ -51,7 +55,6 @@ nav#tabs li {
   background-color: rgba(8, 59, 27, 0.6);
   letter-spacing: 3px;
   line-height: 30px;
-  text-align: center;
 }
 
 nav#tabs li a {
@@ -89,7 +92,8 @@ section#self {
   border: solid rgb(15, 38, 61);
 }
 
-section#partners h1 {
+section#partners h1,
+section#adventures h1 {
   text-align: left;
 }
 
@@ -126,6 +130,12 @@ section.portfolio {
 
 section.portfolio h1 {
   text-align: left;
+}
+
+/* Game Room Page Styles */
+
+section#topthree h1 {
+  text-align: center;
 }
 
 /* Contact Page Styles */
@@ -170,6 +180,7 @@ td.busy {
 
 fieldset#details {
   border: solid rgb(15, 38, 61);
+  border-radius: 1em;
   background-color: rgba(25, 60, 95, 0.7);
 }
 
