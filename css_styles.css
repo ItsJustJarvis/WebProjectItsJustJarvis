@@ -90,6 +90,7 @@ section#self {
   background-color: rgba(25, 60, 95, 0.6);
   border-radius: 1em/1.5em;
   border: solid rgb(15, 38, 61);
+  font-size: 1.2em;
 }
 
 section#partners h1,
@@ -102,6 +103,7 @@ img.partners {
 }
 
 figcaption {
+  font-size: 1.5em;
   text-align: center;
   font-size: large;
   font-weight: bold;

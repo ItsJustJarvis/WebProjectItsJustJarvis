@@ -142,8 +142,9 @@ div.kaylaArchie figure {
 
 div.kaylaArchie p {
   flex: auto;
-  width: 75%;
+  width: 60%;
   margin: auto;
+  padding-top: 1em;
 }
 
 img.partners {
