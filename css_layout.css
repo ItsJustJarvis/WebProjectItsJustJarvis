@@ -351,6 +351,12 @@ div#buttons {
     width: 50%;
   }
 
+  /* Landing Page */
+
+  article#welcome h1, article#welcome p{
+    padding: 1em 0;
+  }
+
   /* About Me Page */
 
   img#me {
@@ -375,7 +381,7 @@ div#buttons {
   }
 
   div#blurb p {
-    padding: 0;
+    padding: 1em 0;
     width: 100%;
   }
 
