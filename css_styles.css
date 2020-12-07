@@ -93,6 +93,11 @@ section#self {
   font-size: 1.2em;
 }
 
+article#aboutme h2{
+    font-size: 1.1em;
+    text-align: left;
+}
+
 section#partners h1,
 section#adventures h1 {
   text-align: left;
