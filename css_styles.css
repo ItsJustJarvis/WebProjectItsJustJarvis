@@ -131,12 +131,21 @@ div#skills h2 {
   font-size: 1.2em;
 }
 
+div.text a{
+    color: white;
+}
+
+div.text a:hover{
+    color: rgba(25, 95, 52, 0.6);
+}
+
 section.portfolio {
   text-align: left;
 }
 
 section.portfolio h1 {
   text-align: left;
+  font-size: 1.5em;
 }
 
 /* Game Room Page Styles */
