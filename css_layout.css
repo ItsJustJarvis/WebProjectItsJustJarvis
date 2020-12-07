@@ -375,7 +375,6 @@ div#buttons {
 }
 
 @media screen and (max-width: 480px) {
-    
   /* General */
 
   nav#tabs li {
@@ -386,6 +385,7 @@ div#buttons {
 
   img#me {
     width: 100%;
+    padding: 0em;
   }
 
   div.kaylaArchie {

@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
   color: white;
   background-color: rgba(25, 60, 95, 0.6);
 }
@@ -159,7 +160,7 @@ td {
   line-height: 3em;
 }
 
-table#calendar td:hover {
+table#calendar td:not(.busy):hover {
   background-color: rgba(25, 95, 52, 0.6);
 }
 
