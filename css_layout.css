@@ -245,6 +245,49 @@ div.examples img {
 
 /* Game Room */
 
+section#games{
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+div#current{
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+  margin: auto;
+}
+
+figure.playing{
+  width: 23%;
+  margin: auto;
+  padding: 0.5em;
+}
+
+figure.playing img{
+  width: 8em;
+}
+
+div#upnext{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+  margin: auto;
+  padding: 1em;
+}
+
+figure.comingsoon{
+  width: 65%;
+  margin: auto;
+  padding: 0.5em;
+}
+
+figure.comingsoon img{
+  width: 8em;
+}
+
 section#topthree {
   display: flex;
   flex-flow: column wrap;
@@ -453,6 +496,30 @@ div#buttons {
 
 /* Game Room Page */
 
+div#current{
+  width: 100%;
+}
+
+div#upnext{
+  width:100%;
+}
+
+figure.playing{
+  width: 80%;
+}
+
+figure.playing img{
+  width: 100%;
+}
+
+figure.comingsoon{
+  width: 80%;
+}
+
+figure.comingsoon img{
+  width: 100%;
+}
+
 div.top div{
   width: 100%;
 }
@@ -470,6 +537,10 @@ div.top p{
 }
 
   /* Contact page */
+
+  section#schedule{
+    width: 100%;
+  }
 
   div#contact {
     order: 1;

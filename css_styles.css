@@ -150,10 +150,30 @@ section.portfolio h1 {
 
 /* Game Room Page Styles */
 
+section#games{
+    background-color: rgba(25, 60, 95, 0.6);
+    border: solid rgb(15, 38, 61);
+    border-radius: 1em;
+}
+
+div#upnext {
+    border: solid rgb(15, 38, 61);
+    border-radius: 1em;
+}
+
+div#upnext h1{
+    font-size: 1.5em;
+}
+
+section#games figcaption{
+    font-size: 1em;
+}
+
 h1.title{
     font-size: 1.5em;
     text-align: left;
 }
+
 
 
 /* Contact Page Styles */
