@@ -261,31 +261,33 @@ div#current{
 }
 
 figure.playing{
+  flex: auto;
   width: 23%;
   margin: auto;
   padding: 0.5em;
 }
 
 figure.playing img{
-  width: 8em;
+  width: 100%;
 }
 
 div#upnext{
   display: flex;
   flex-flow: row wrap;
-  width: 30%;
+  width: 27%;
   margin: auto;
   padding: 1em;
 }
 
 figure.comingsoon{
-  width: 65%;
+  flex: auto;
+  width: 50%;
   margin: auto;
   padding: 0.5em;
 }
 
 figure.comingsoon img{
-  width: 8em;
+  width: 100%;
 }
 
 section#topthree {
@@ -355,6 +357,7 @@ div.methods {
   display: flex;
   flex-flow: row wrap;
   margin: 1em auto;
+  padding: 0.5em;
   width: 90%;
 }
 
@@ -383,6 +386,7 @@ fieldset#details {
   flex-flow: row wrap;
   width: 100%;
   margin: auto;
+  padding: 0.2em;
 }
 
 div#fColumn1 {
@@ -409,7 +413,6 @@ div.fRow {
 textarea {
   flex: auto;
   width: 100%;
-  height: 10em;
 }
 
 div#buttons {
@@ -421,10 +424,46 @@ div#buttons {
 /*Responsive Features*/
 
 @media only screen and (max-width: 769px) {
+ 
+  /* About Me */
+  
+  section#self {
+    flex-direction: column;
+  }
+
+  div#selfPortrait{
+    width: 50%;
+    padding: 0;
+    margin: auto;
+  }
+
+  article#aboutme{
+    width: 100%;
+    padding: 0;
+  }
+    
   div.column {
     flex: 1 2 auto;
     max-width: 50%;
   }
+
+  /* Contact Page */
+
+  div#fColumn1,
+  div#fColumn2{
+    width: 50%;
+  }
+
+  div#fColumn3 {
+    width: 100%;
+  }
+
+
+  div#buttons {
+    width: 100%;
+  }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -548,19 +587,12 @@ div.top p{
     margin: auto;
   }
 
-  fieldset#details {
-    flex-flow: column nowrap;
-  }
-
   div#fColumn1,
   div#fColumn2,
   div#fColumn3 {
     width: 100%;
   }
 
-  div.fRow {
-    width: 100%;
-  }
 
   div#buttons {
     width: 100%;
