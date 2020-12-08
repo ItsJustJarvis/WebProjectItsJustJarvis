@@ -145,14 +145,16 @@ section.portfolio {
 
 section.portfolio h1 {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* Game Room Page Styles */
 
-section#topthree h1 {
-  text-align: center;
+h1.title{
+    font-size: 1.5em;
+    text-align: left;
 }
+
 
 /* Contact Page Styles */
 

@@ -234,7 +234,8 @@ div.text {
 
 div.examples {
   flex: 1 1 auto;
-  width: 50%;
+  width: 40%;
+  margin: auto;
 }
 
 div.examples img {
@@ -245,8 +246,36 @@ div.examples img {
 /* Game Room */
 
 section#topthree {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin:auto;
+}
+
+div.top{
+  display: flex;
+  flex-flow: row nowrap;
   width: 100%;
-  margin: 5em auto;
+  padding: 2em;
+}
+
+div.top article{
+  margin: auto;
+}
+
+div.top img{
+  width: 30%;
+  margin: 1em auto;
+}
+
+div.top p{
+  width: 90%;
+  margin: auto;
+}
+
+h1.title{
+  margin: auto;
+  width: 90%;
 }
 
 /* Contact Page */
@@ -255,7 +284,7 @@ section#schedule {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
-  margin: 1em auto;
+  margin: auto;
 }
 
 section#schedule h1{
@@ -416,6 +445,24 @@ div#buttons {
   section.portfolio div {
     width: 100%;
   }
+
+
+/* Game Room Page */
+
+div.top{
+  flex-flow: row wrap;
+}
+div.top img{
+  width: 100%;
+}
+
+h1.title{
+width: 100%;
+}
+
+div.top p{
+  width: 100%;
+}
 
   /* Contact page */
 
