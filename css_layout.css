@@ -254,12 +254,13 @@ section#topthree {
 
 div.top{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: 100%;
   padding: 2em;
 }
 
 div.top article{
+  width: 60%;
   margin: auto;
 }
 
@@ -449,10 +450,11 @@ div#buttons {
 
 /* Game Room Page */
 
-div.top{
-  flex-flow: row wrap;
-}
 div.top img{
+  width: 100%;
+}
+
+div.top article{
   width: 100%;
 }
 
