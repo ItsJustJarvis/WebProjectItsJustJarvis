@@ -264,8 +264,12 @@ div.top article{
   margin: auto;
 }
 
-div.top img{
+div.top div{
   width: 30%;
+}
+
+div.top img{
+  width: 100%;
   margin: auto;
 }
 
@@ -450,7 +454,7 @@ div#buttons {
 
 /* Game Room Page */
 
-div.top img{
+div.top div{
   width: 100%;
 }
 
